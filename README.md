@@ -74,15 +74,15 @@ Untuk lebih memudahkan proses instalasi, cukup dengan menjalankan perintah berik
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/techAPJ/install-rails/master/linux)
 ```
-Perintah Skrip ini disesuaikan untuk __Discourse__, dan mencakup semua _package_ yang diperlukan untuk instalasi Discourse. Dependensi __Discourse__ sudah selesai di install, kemudian akan dilanjutkan dengan menginstal __Discourse__.
+Perintah Skrip ini disesuaikan untuk __Discourse__, dan mencakup semua _package_ yang diperlukan untuk instalasi Discourse. Dependensi __Discourse__ sudah selesai di install, kemudian akan dilanjutkan dengan menginstall platform __Discourse__.
 
-### 1. Clone Discourse ###
+#### 1. Clone Discourse ###
 Hal pertama yang perlu dilakukan adalah melakukan cloning repositori aplikasi ke komputer lokal agar seluruh file yang aplikasi butuhkan untuk _development_ sudah ter _clone_ ke komputer kita.
 ```
 git clone https://github.com/discourse/discourse.git 
 ```
 
-### 2.Setup Database ###
+#### 2.Setup Database ###
 Karena aplikasi berbasis / menggunakan database dalam proses development nya, maka kita perlu membuat sebuah role terlebih dahulu. Disini, kita menggunakan username yang sama dengan ubuntu kita agar lebih mudah.
 
 Cek username ubuntu :
@@ -95,13 +95,13 @@ Create role :
 sudo -u postgres createuser -s "$USERNAME_KITA"
 ```
 
-### 3.Build && Install ###
+#### 3.Build && Install ###
 Pertama, kita tentu perlu masuk ke directory tempat kita cloning repository aplikasi tadi.
 ```
 cd discourse
 ```
 
-### 4. Install bundle ###
+#### 4. Install bundle ###
 bundle install merupakan sebuah perintah yang kita gunakan untuk menginstall dependencies secara spesifik pada gemfile berbasis bahasa Ruby yang kita butuhkan pada projek ini.
 ```
 source ~/.bashrc
@@ -115,7 +115,7 @@ bundle exec rake db:migrate
 RAILS_ENV=test bundle exec rake db:create db:migrate
 ```
 
-### 5. Make an Account ###
+#### 5. Make an Account ###
 Untuk dapat menggunakan aplikasi, tentu kita memerlukan sebuah account terlebih dahulu. Disini kita dapat membuat sebuah akun admin, yang akan kita gunakan untuk login aplikasi.
 ```
 RAILS_ENV=development bundle exec rake admin:create
@@ -123,7 +123,7 @@ RAILS_ENV=development bundle exec rake admin:create
 Kita akan diminta untuk menginput email & password ( min 10 karakter ).
 
 
-### 6. Running the Application ###
+#### 6. Running the Application ###
 Setelah semua persiapan dilakukan dengan benar, kita dapat menjalankan aplikasi pada server / localhost kita.
 ```
 bundle exec rails server
@@ -137,7 +137,7 @@ cd alamatdirektori/direktori
 source ~/.bashrc
 bundle exec rails server
 ```
-### 7. Create New Admin ###
+#### 7. Create New Admin ###
 
 Untuk membuat new admin, jalankan program ini:
 ```
