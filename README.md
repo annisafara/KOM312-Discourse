@@ -219,6 +219,16 @@ Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, apli
   * kekurangan
 * Bandingkan dengan aplikasi web lain yang sejenis
 
+Kelebihan | Kekurangan
+--------- | ----------
+Content cell 1 | Content cell 2
+Content2 cell 1 | Content2 cell 2
+Content3 cell 1 | Content3 cell 2
+
+### Discourse VS EpochTalk
+Ini contoh perbandingan aplikasi web lain yang sejenis ya.
+
+
 # Referensi
 [What is Discourse?](https://www.discourse.org/about) - Discourse <br>
 [Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint <br>
