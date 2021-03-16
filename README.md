@@ -192,6 +192,9 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 * Fungsi-fungsi utama
 ![image](https://user-images.githubusercontent.com/60084468/111333307-24cbe480-86a5-11eb-9145-7d44b315fd06.png)
 
+![image](https://user-images.githubusercontent.com/60084468/111335758-3910e100-86a7-11eb-8659-af5855dcdb8d.png)
+
+
 * Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 # Pembahasan
