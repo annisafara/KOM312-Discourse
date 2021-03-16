@@ -125,8 +125,9 @@ Kita akan diminta untuk menginput email & password ( min 10 karakter ).
 
 ### 6. Running the Application ###
 Setelah semua persiapan dilakukan dengan benar, kita dapat menjalankan aplikasi pada server / localhost kita.
+```
 bundle exec rails server
-
+```
 Pada localhost, secara default aplikasi akan dijalankan pada port 3000, sehingga kita dapat langsung mengakses http://localhost:3000 .
 Untuk memberhentikan service yang sedang berjalan cukup ctrl + z dari terminal, lalu close terminal, dan service akan berhenti running.
 *note :
