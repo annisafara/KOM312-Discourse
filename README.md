@@ -14,6 +14,19 @@ __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dek
 
 # Instalasi
 *Prasyarat, apa saja yang harus diinstal sebelumnya.*
+#### Kebutuhan Sistem :
+- Git 
+- rbenv 
+- ruby-build 
+- Ruby 
+- Rails 
+- PostgreSQL 
+- SQLite 
+- Redis 
+- Bundler 
+- MailCatcher 
+- ImageMagick 
+
 
 __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan browser minimumnya tinggi. Platform ini mendukung rilis terbaru dan stabil dari semua browser dan platform utama:
 * Microsoft Edge
