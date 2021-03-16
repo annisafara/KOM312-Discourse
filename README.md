@@ -145,8 +145,8 @@ RAILS_ENV=development bundle exec rake admin:create
 konfigurasi email :
 ```
 Run MailCatcher:
-```
 mailcatcher --http-ip 0.0.0.0
+```
 
 selesai
 
