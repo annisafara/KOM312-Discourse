@@ -86,32 +86,40 @@ git clone https://github.com/discourse/discourse.git
 Karena aplikasi berbasis / menggunakan database dalam proses development nya, maka kita perlu membuat sebuah role terlebih dahulu. Disini, kita menggunakan username yang sama dengan ubuntu kita agar lebih mudah.
 
 Cek username ubuntu :
+```
 whoami
+```
 
 Create role :
+```
 sudo -u postgres createuser -s "$USERNAME_KITA"
+```
 
 ### 3.Build && Install ###
 Pertama, kita tentu perlu masuk ke directory tempat kita cloning repository aplikasi tadi.
+```
 cd discourse
-
+```
 
 ### 4. Install bundle ###
 bundle install merupakan sebuah perintah yang kita gunakan untuk menginstall dependencies secara spesifik pada gemfile berbasis bahasa Ruby yang kita butuhkan pada projek ini.
+```
 source ~/.bashrc
 bundle install
-
+```
 
 Setelah kita telah berhasil menginstall seluruh dependencies menggunakan bundle, kita lanjut menyelesaikan konfigurasi koneksi database dengan perintah berikut :
+```
 bundle exec rake db:create 
 bundle exec rake db:migrate
 RAILS_ENV=test bundle exec rake db:create db:migrate
-
+```
 
 ### 5. Make an Account ###
 Untuk dapat menggunakan aplikasi, tentu kita memerlukan sebuah account terlebih dahulu. Disini kita dapat membuat sebuah akun admin, yang akan kita gunakan untuk login aplikasi.
+```
 RAILS_ENV=development bundle exec rake admin:create
-
+```
 Kita akan diminta untuk menginput email & password ( min 10 karakter ).
 
 
@@ -123,19 +131,21 @@ Pada localhost, secara default aplikasi akan dijalankan pada port 3000, sehingga
 Untuk memberhentikan service yang sedang berjalan cukup ctrl + z dari terminal, lalu close terminal, dan service akan berhenti running.
 *note :
 tiap ingin run aplikasi, pastikan sudah masuk ke directory aplikasi, lalu kembali run servicenya. baru akses kembali http://localhost:3000 
+```
 cd alamatdirektori/direktori
 source ~/.bashrc
 bundle exec rails server
-
+```
 ### 7. Create New Admin ###
 
 Untuk membuat new admin, jalankan program ini:
-
+```
 RAILS_ENV=development bundle exec rake admin:create
-
+```
 konfigurasi email :
+```
 Run MailCatcher:
-
+```
 mailcatcher --http-ip 0.0.0.0
 
 selesai
