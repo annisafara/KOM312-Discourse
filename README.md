@@ -74,7 +74,7 @@ Untuk lebih memudahkan proses instalasi, cukup dengan menjalankan perintah berik
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/techAPJ/install-rails/master/linux)
 ```
-Perintah Skrip ini disesuaikan untuk __Discourse__, dan mencakup semua _package_ yang diperlukan untuk instalasi Discourse. Dependensi __Discourse__ sudah selesai di install, kemudian akan dilanjutkan dengan menginstall platform __Discourse__.
+Perintah Skrip ini disesuaikan untuk __Discourse__, dan mencakup semua _package_ yang diperlukan untuk instalasi Discourse. Dependensi __Discourse__ sudah selesai di install, kemudian akan dilanjutkan dengan menginstall platform __Discourse__ dengan langkah-langkah sebagai berikut :
 
 #### 1. Clone Discourse ###
 Hal pertama yang perlu dilakukan adalah melakukan cloning repositori aplikasi ke komputer lokal agar seluruh file yang aplikasi butuhkan untuk _development_ sudah ter _clone_ ke komputer kita.
