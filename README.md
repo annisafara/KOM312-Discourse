@@ -190,6 +190,8 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 * Tampilan aplikasi web
 ![WhatsApp Image 2021-03-16 at 3 50 26 PM](https://user-images.githubusercontent.com/60084468/111330276-5f804d80-86a2-11eb-909c-7d6d50352deb.jpeg)
 * Fungsi-fungsi utama
+![image](https://user-images.githubusercontent.com/60084468/111333307-24cbe480-86a5-11eb-9145-7d44b315fd06.png)
+
 * Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
 
 # Pembahasan
