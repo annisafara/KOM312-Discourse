@@ -14,7 +14,19 @@ __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dek
 
 # Instalasi
 *Prasyarat, apa saja yang harus diinstal sebelumnya.*
+
+__Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan browser minimumnya tinggi. Platform ini mendukung rilis terbaru dan stabil dari semua browser dan platform utama:
+* Microsoft Edge
+* Google Chrome
+* Mozilla Firefox
+* Apple Safari
+
+Discourse dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan secara otomatis beralih ke tata letak seluler untuk layar kecil.
+* Mobile Safari, iOS 10.3+
+* Chrome Seluler, Android 4.4+
+
 #### Kebutuhan Sistem :
+Terdapat beberapa packages, yang kita butuhkan untuk mempersiapkan Rails development environment, yang nantinya akan digunakan untuk develop aplikasi. Terdiri dari :
 - Git 
 - rbenv 
 - ruby-build 
@@ -27,16 +39,6 @@ __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dek
 - MailCatcher 
 - ImageMagick 
 
-
-__Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan browser minimumnya tinggi. Platform ini mendukung rilis terbaru dan stabil dari semua browser dan platform utama:
-* Microsoft Edge
-* Google Chrome
-* Mozilla Firefox
-* Apple Safari
-
-Discourse dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan secara otomatis beralih ke tata letak seluler untuk layar kecil.
-* Mobile Safari, iOS 10.3+
-* Chrome Seluler, Android 4.4+
 
 *Langkah instalasi dalam CLI.*
 
