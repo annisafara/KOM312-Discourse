@@ -5,54 +5,82 @@ __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dek
 demo : https://try.discourse.org/
 
 # Instalasi
-Pastikan sudah setup VM sebagai syarat instalasi awal :
+Pastikan sudah melakukan setup VM sebagai syarat instalasi awal:
+
 ### Setup VM 
-Kami menggunakan VM dengan sistem operasi Ubuntu 20.04 LTS  Desktop untuk melakukan proses instalisasi aplikasi. proses install && setup VM sendiri kami lakukan dengan mengikuti langkah langkah pada tutorial berikut :
-https://linuxhint.com/install_ubuntu_virtualbox_2004/
+Kami menggunakan VM dengan sistem operasi `Ubuntu 20.04 LTS Desktop` untuk melakukan proses instalisasi aplikasi. Karena aplikasi dioperasikan pada local computer, kami menginstal `localhost` dan `PHP` dengan tahapan berikut,
 
-Kemudian, karena aplikasi dioperasikan pada local computer, kita menginstall localhost dan php berdasarkan tutorial berikut :
-https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04
+__Step 1 — Install Apache__
+Memperbarui indeks _local package_:
+```
+$ sudo apt update
+```
+Install _package_ `apache2`:
+```
+$ sudo apt install apache2
+```
+Setelah mengkonfirmasi penginstalan, `apt` akan menginstal _Apache_ dan semua dependensi yang diperlukan.
 
-Lalu, kita melakukan konfigurasi SSH dan port-forwarding dari server ke host windows kita.
-pada server, kita install dan enable konfigurasi SSH nya:
-sudo apt install openssh-server
-sudo systemctl enable ssh
-sudo systemctl start ssh
-sudo ufw allow ssh
-sudo ufw enable
+__Step 2 — Menyesuaikan Firewall__
+Selama instalasi, Apache mendaftarkan dirinya dengan UFW untuk menyediakan beberapa profil aplikasi yang dapat digunakan untuk mengaktifkan atau menonaktifkan akses ke Apache melalui firewall.
 
-pada virtual-box, kita terapkan aturan port forwarding sebagai berikut :
-*gambar*
+List profil aplikasi UFW:
+```
+$ sudo ufw app list
+```
+Sebaiknya aktifkan profil yang paling ketat yang masih memungkinkan traffic yang telah dikonfigurasikan. Karena disini kami belum mengkonfigurasi SSL untuk server, kami hanya perlu mengizinkan traffic pada port 80:
+```
+$ sudo ufw allow 'Apache'
+```
+Verifikasi perubahan:
+```
+$ sudo ufw status
+```
+Pada output yang ditampilkan, profil tersebut telah diaktifkan untuk mengizinkan akses ke server web.
 
-Setelahnya kita dapat mengakses server melalui SSH dari windows, dan menginstall aplikasi.
+Selanjutnya, kami melakukan konfigurasi SSH dan _port-forwarding_ dari server ke host windows. Pada server, kami install dan enable konfigurasi SSH nya:
+```
+$ sudo apt install openssh-server
+$ sudo systemctl enable ssh
+$ sudo systemctl start ssh
+$ sudo ufw allow ssh
+$ sudo ufw enable
+```
+
+Pada virtual-box, kita terapkan aturan port forwarding sebagai berikut:
+![port-forwarding](https://user-images.githubusercontent.com/60083980/111300227-6b104c00-8683-11eb-9649-68172c05b270.png)
+
+Server sudah dapat diakses melalui SSH dari windows dan menginstal aplikasi.
 *gambar*
 
 ### Install Discourse Dependencies
 
-Terdapat beberapa packages, yang kita butuhkan untuk mempersiapkan Rails development environment, yang nantinya akan digunakan untuk develop aplikasi. Terdiri dari :
+Terdapat beberapa _packages_ yang dibutuhkan untuk mempersiapkan _Rails development environment_, yang nantinya akan digunakan untuk _develop_ aplikasi. _Packages_ yang dibutuhkan terdiri dari:
+* Git
+* rbenv
+* ruby-build
+* Ruby
+* Rails
+* PostgreSQL
+* SQLite
+* Redis
+* Bundler
+* MailCatcher 
+* ImageMagick
+ 
+Masing-masing _packages_ diinstall secara berbeda. Namun, disini sudah tersedia script yang berisi seluruh perintah untuk menginstal masing-masing _dependencies_ tersebut: https://github.com/techAPJ/install-rails/blob/master/linux
 
-*Git 
-rbenv 
-ruby-build 
-Ruby 
-Rails 
-PostgreSQL 
-SQLite 
-Redis 
-Bundler 
-MailCatcher 
-ImageMagick*
-
-Masing masing packages diinstall secara berbeda. Namun, disini sudah tersedia script yang berisi seluruh perintah untuk menginstall masing masing seluruh dependencies tersebut : https://github.com/techAPJ/install-rails/blob/master/linux .
-
-Untuk lebih memudahkan menginstallnya, kita cukup menjalankan perintah berikut dari terminal :
+Untuk lebih memudahkan proses instalasi, cukup dengan menjalankan perintah berikut dari terminal:
+```
 bash <(wget -qO- https://raw.githubusercontent.com/techAPJ/install-rails/master/linux)
-
-Perintah Skrip ini disesuaikan untuk Discourse, dan mencakup semua paket yang diperlukan untuk instalasi Discourse.
-Sekarang kita telah menginstal dependensi Discourse, mari kita lanjutkan untuk menginstal Discourse itu sendiri.
+```
+Perintah Skrip ini disesuaikan untuk __Discourse__, dan mencakup semua _package_ yang diperlukan untuk instalasi Discourse. Dependensi __Discourse__ sudah selesai di install, kemudian akan dilanjutkan dengan menginstal __Discourse__.
 
 ### 1. Clone Discourse ###
+Hal pertama yang perlu dilakukan adalah melakukan cloning repositori aplikasi ke komputer lokal agar seluruh file yang aplikasi butuhkan untuk _development_ sudah ter _clone_ ke komputer kita.
+```
 git clone https://github.com/discourse/discourse.git 
+```
 
 ### 2.Setup Database ###
 Karena aplikasi berbasis / menggunakan database dalam proses development nya, maka kita perlu membuat sebuah role terlebih dahulu. Disini, kita menggunakan username yang sama dengan ubuntu kita agar lebih mudah.
@@ -160,3 +188,5 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 # Referensi
 [What is Discourse?](https://www.discourse.org/about) - Discourse
+[Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint
+[](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) - DigitalOcean
