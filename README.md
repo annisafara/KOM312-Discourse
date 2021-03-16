@@ -1,5 +1,14 @@
 ![Discourse_logo](https://user-images.githubusercontent.com/60083980/111193101-63519880-85ec-11eb-9133-f9f6cc20def9.png)
 
+# Anggota Kelompok
+|  | Nama | NIM | 
+| --- | --- | --- |
+| 1 | Ervina Maharani | G64180011 |
+| 2 | Khairunnisa | G64180050 |
+| 3 | Annisa Faradila | G64180074 |
+| 4 | Firda Agustin Kartika Pratiwi | G64180116 |
+
+
 # Sekilas Tentang
 __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dekade Internet berikutnya. Platform ini dapat digunakan sebagai _mailing list_, forum diskusi, ruang obrolan _long form_, dan masih banyak lagi. __Discourse__ adalah aplikasi `JavaScript` yang berjalan di browser web, menggunakan kerangka kerja `Ember.js`. Sisi server __Discourse__ adalah `Ruby on Rails` yang didukung oleh database `Postgres` dan cache `Redis`.
 
