@@ -13,6 +13,7 @@ Demo : https://try.discourse.org/
 :---:|
 ---
 
+---
 # 🔧 Instalasi
 __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan browser minimumnya tinggi. Platform ini mendukung rilis terbaru dan stabil dari semua browser dan platform utama:
 * Microsoft Edge
@@ -23,6 +24,7 @@ __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan b
 Discourse dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan secara otomatis beralih ke tata letak seluler untuk layar kecil.
 * Mobile Safari, iOS 10.3+
 * Chrome Seluler, Android 4.4+
+---
 
 Sebagai syarat instalasi awal, pastikan sudah melakukan setup VM.
 ### Install Discourse Dependencies
@@ -118,7 +120,7 @@ Melakukan konfigurasi email:
 Run MailCatcher:
 mailcatcher --http-ip 0.0.0.0
 ```
-
+---
 # 🔎 Konfigurasi 
 ### Setup VM 
 Kami menggunakan VM dengan sistem operasi `Ubuntu 20.04 LTS Desktop` untuk melakukan proses instalisasi aplikasi. Karena aplikasi dioperasikan pada local computer, kami menginstal `localhost` dan `PHP` dengan tahapan berikut,
@@ -166,6 +168,8 @@ Pada virtual-box, kita terapkan aturan port forwarding sebagai berikut:
 Server sudah dapat diakses melalui SSH dari windows dan menginstal aplikasi.
 *gambar*
 
+---
+---
 # 💡 Cara Pemakaian
 Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, aplikasi __Discourse__ sudah bisa dijalankan dan digunakan pada web browser. Cara pemakaian dari aplikasi ini sebagai berikut:
 
@@ -198,7 +202,9 @@ Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, apli
 ![13_setting](https://user-images.githubusercontent.com/60083980/111376558-2f50a300-86d2-11eb-8b67-886f9fc13612.png)
 ![14_profile](https://user-images.githubusercontent.com/60083980/111376570-311a6680-86d2-11eb-9ad8-5e6acf848654.png)
 
+---
 
+---
 # 📚 Pembahasan
 * Pendapat anda tentang aplikasi web ini
   * kelebihan <p>
@@ -213,11 +219,15 @@ Content cell 1 | Content cell 2
 Content2 cell 1 | Content2 cell 2
 Content3 cell 1 | Content3 cell 2
 
+---
 ### Discourse VS EpochTalk
 Ini contoh perbandingan aplikasi web lain yang sejenis ya.
 
-
+---
+---
 # 🔖 Referensi
 [What is Discourse?](https://www.discourse.org/about) - Discourse <br>
 [Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint <br>
 [Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) - DigitalOcean
+
+---
