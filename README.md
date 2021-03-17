@@ -218,8 +218,8 @@ Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, apli
 
 # Pembahasan
 * Pendapat anda tentang aplikasi web ini
-  * kelebihan
-  Kelebihan aplikasi platform discourse adalah aplikasi ini dapat melakukan setup secara penuh mulai dari cek traffic dan API, set tampilan (tema, font, logo dll), jadi seluruh   konfigurasi yang kita lakukan dapat memiliki kontrol penuh terhadap aplikasi platform yang dijalankan.
+  * kelebihan <p>
+  Kelebihan aplikasi platform discourse adalah aplikasi ini dapat melakukan setup secara penuh mulai dari cek traffic dan API, set tampilan (tema, font, logo dll), jadi seluruh   konfigurasi yang kita lakukan dapat memiliki kontrol penuh terhadap aplikasi platform yang dijalankan. </p>
   * kekurangan
   -
 * Bandingkan dengan aplikasi web lain yang sejenis
