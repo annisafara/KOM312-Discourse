@@ -227,8 +227,33 @@ Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberap
 * Pembaruan yang sering, yang memungkinkan perubahan UI berkelanjutan
 
 ---
-### Discourse VS EpochTalk
-Ini contoh perbandingan aplikasi web lain yang sejenis ya.
+### Discourse VS Slack VS Discord
+#### Slack
+![Tampilan Slack](https://user-images.githubusercontent.com/60083961/111427834-466eaf80-8729-11eb-8115-d51144bf1a89.png)
+
+##### Fitur pada slack:
+* Public Conversation
+* Realtime Chat
+* Private message
+* Chat Threads
+* Voice chat (one-to-one only on free plan)
+* Screen sharing (paid plan only)
+* Video calls (one-to-one only on free plan, up to 15 participants on paid plan)
+* Message history (10k message on free plan, unlimited on paid plan)
+
+
+#### Discord
+![Tampilan Discord](https://user-images.githubusercontent.com/60083961/111429226-47a0dc00-872b-11eb-8f58-186f35e8cd3f.png)
+
+##### Fitur pada discord:
+* Public Conversation
+* Realtime Chat
+* Private message
+* Voice chat
+* Screen sharing
+* Video calls (up to 25 participants)
+* Unlimited message history
+
 
 ---
 ---
@@ -236,6 +261,7 @@ Ini contoh perbandingan aplikasi web lain yang sejenis ya.
 [What is Discourse?](https://www.discourse.org/about) - Discourse <br>
 [Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint <br>
 [Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) - DigitalOcean <br>
-[Discourse Review](https://www.feverbee.com/platforms/discourse/) - Pro and Cons Discourse
+[Discourse Review](https://www.feverbee.com/platforms/discourse/) - Pro and Cons Discourse <br>
+[Slack vs Discord vs Discourse: The best tool for your community](https://orbit.love/blog/slack-vs-discord-vs-discourse/) - Orbit
 
 ---
