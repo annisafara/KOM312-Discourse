@@ -125,7 +125,7 @@ mailcatcher --http-ip 0.0.0.0
 ### Setup VM 
 Kami menggunakan VM dengan sistem operasi `Ubuntu 20.04 LTS Desktop` untuk melakukan proses instalisasi aplikasi. Karena aplikasi dioperasikan pada local computer, kami menginstal `localhost` dan `PHP` dengan tahapan berikut,
 
-__Step 1 — Install Apache__
+__Step 1 — Install Apache__ <br>
 Memperbarui indeks _local package_:
 ```
 $ sudo apt update
@@ -136,7 +136,7 @@ $ sudo apt install apache2
 ```
 Setelah mengkonfirmasi penginstalan, `apt` akan menginstal _Apache_ dan semua dependensi yang diperlukan.
 
-__Step 2 — Menyesuaikan Firewall__
+__Step 2 — Menyesuaikan Firewall__ <br>
 Selama instalasi, Apache mendaftarkan dirinya dengan UFW untuk menyediakan beberapa profil aplikasi yang dapat digunakan untuk mengaktifkan atau menonaktifkan akses ke Apache melalui firewall.
 
 List profil aplikasi UFW:
