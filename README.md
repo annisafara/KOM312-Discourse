@@ -10,11 +10,7 @@
 
 __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dekade Internet berikutnya. Platform ini dapat digunakan sebagai _mailing list_, forum diskusi, ruang obrolan _long-form_, dan masih banyak lagi. __Discourse__ adalah aplikasi `JavaScript` yang berjalan di browser web, menggunakan kerangka kerja `Ember.js`. Sisi server __Discourse__ adalah `Ruby on Rails` yang didukung oleh database `Postgres` dan cache `Redis`.
 Demo : https://try.discourse.org/
-:---:|
----
 
----
-# 🔧 Instalasi
 __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan browser minimumnya tinggi. Platform ini mendukung rilis terbaru dan stabil dari semua browser dan platform utama:
 * Microsoft Edge
 * Google Chrome
@@ -24,7 +20,11 @@ __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan b
 __Discourse__ dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan secara otomatis beralih ke tata letak seluler untuk layar kecil.
 * Mobile Safari, iOS 10.3+
 * Chrome Seluler, Android 4.4+
+:---:|
 ---
+
+---
+# 🔧 Instalasi
 
 Sebagai syarat instalasi awal, pastikan sudah melakukan setup VM.
 ### Install Discourse Dependencies
