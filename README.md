@@ -228,8 +228,10 @@ Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberap
 
 ---
 ### Discourse VS Slack VS Discord
+
 #### Slack
-![Tampilan Slack](https://user-images.githubusercontent.com/60083961/111427834-466eaf80-8729-11eb-8115-d51144bf1a89.png)
+
+![Tampilan Slack](https://user-images.githubusercontent.com/60083961/111430187-97cc6e00-872c-11eb-9235-ca24d5fb8455.png)
 
 ##### Fitur pada slack:
 * Public Conversation
@@ -243,8 +245,8 @@ Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberap
 
 
 #### Discord
-![Tampilan Discord](https://user-images.githubusercontent.com/60083961/111429898-33111380-872c-11eb-9952-712cfa0f5b51.png)
 
+![Tampilan Discord](https://user-images.githubusercontent.com/60083961/111430210-a155d600-872c-11eb-8e26-87ee2e6deb64.png)
 
 ##### Fitur pada discord:
 * Public Conversation
