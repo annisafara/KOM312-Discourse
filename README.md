@@ -1,14 +1,19 @@
 ![Discourse_logo](https://user-images.githubusercontent.com/60083980/111193101-63519880-85ec-11eb-9133-f9f6cc20def9.png)
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+---
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi) |
+:---:|:---:|:---:|:---:|:---:|:---:
+---
 
+---
+# 🔑 Sekilas Tentang
 
-# Sekilas Tentang
 __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dekade Internet berikutnya. Platform ini dapat digunakan sebagai _mailing list_, forum diskusi, ruang obrolan _long-form_, dan masih banyak lagi. __Discourse__ adalah aplikasi `JavaScript` yang berjalan di browser web, menggunakan kerangka kerja `Ember.js`. Sisi server __Discourse__ adalah `Ruby on Rails` yang didukung oleh database `Postgres` dan cache `Redis`.
 Demo : https://try.discourse.org/
+:---:|
+---
 
-
-# Instalasi
+# 🔧 Instalasi
 __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan browser minimumnya tinggi. Platform ini mendukung rilis terbaru dan stabil dari semua browser dan platform utama:
 * Microsoft Edge
 * Google Chrome
@@ -114,7 +119,7 @@ Run MailCatcher:
 mailcatcher --http-ip 0.0.0.0
 ```
 
-# Konfigurasi 
+# 🔎 Konfigurasi 
 ### Setup VM 
 Kami menggunakan VM dengan sistem operasi `Ubuntu 20.04 LTS Desktop` untuk melakukan proses instalisasi aplikasi. Karena aplikasi dioperasikan pada local computer, kami menginstal `localhost` dan `PHP` dengan tahapan berikut,
 
@@ -161,19 +166,7 @@ Pada virtual-box, kita terapkan aturan port forwarding sebagai berikut:
 Server sudah dapat diakses melalui SSH dari windows dan menginstal aplikasi.
 *gambar*
 
-
-
-# Maintenance (opsional)
-Setting tambahan untuk maintenance secara periodik, misalnya:
-* buat backup database tiap pekan
-* hapus direktori sampah tiap hari
-* dll
-
-# Otomatisasi (opsional)
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-
-
-# Cara Pemakaian
+# 💡 Cara Pemakaian
 Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, aplikasi __Discourse__ sudah bisa dijalankan dan digunakan pada web browser. Cara pemakaian dari aplikasi ini sebagai berikut:
 
 1. Pada saat melakukan akses ke http://localhost:3000, hasil yang akan ditampilkan pertama kali seperti di bawah ini merupakan halaman awal pada saat belum melakukan _login_ ke dalam aplikasi __Discourse__. Untuk melakukan proses _login_ ataupun medaftarkan akun baru, bisa dengan memilih tombol __Sign Up__ atau __Log In__ di kanan atas.
@@ -206,7 +199,7 @@ Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, apli
 ![14_profile](https://user-images.githubusercontent.com/60083980/111376570-311a6680-86d2-11eb-9ad8-5e6acf848654.png)
 
 
-# Pembahasan
+# 📚 Pembahasan
 * Pendapat anda tentang aplikasi web ini
   * kelebihan <p>
   Kelebihan aplikasi platform discourse adalah aplikasi ini dapat melakukan setup secara penuh mulai dari cek traffic dan API, set tampilan (tema, font, logo dll), jadi seluruh   konfigurasi yang kita lakukan dapat memiliki kontrol penuh terhadap aplikasi platform yang dijalankan. </p>
@@ -224,7 +217,7 @@ Content3 cell 1 | Content3 cell 2
 Ini contoh perbandingan aplikasi web lain yang sejenis ya.
 
 
-# Referensi
+# 🔖 Referensi
 [What is Discourse?](https://www.discourse.org/about) - Discourse <br>
 [Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint <br>
 [Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) - DigitalOcean
