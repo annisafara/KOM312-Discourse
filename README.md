@@ -1,7 +1,7 @@
 ![Discourse_logo](https://user-images.githubusercontent.com/60083980/111193101-63519880-85ec-11eb-9133-f9f6cc20def9.png)
 
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
-:---: | :---: | :---: | :---: | :---:
+[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---: | :---: | :---: | :---: | :---: | :---:
 
 # Sekilas Tentang
 __Discourse__ adalah 100% platform diskusi _open source_ yang dibangun untuk dekade Internet berikutnya. Platform ini dapat digunakan sebagai _mailing list_, forum diskusi, ruang obrolan _long-form_, dan masih banyak lagi. __Discourse__ adalah aplikasi `JavaScript` yang berjalan di browser web, menggunakan kerangka kerja `Ember.js`. Sisi server __Discourse__ adalah `Ruby on Rails` yang didukung oleh database `Postgres` dan cache `Redis`.
@@ -20,52 +20,6 @@ Discourse dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan
 * Chrome Seluler, Android 4.4+
 
 Sebagai syarat instalasi awal, pastikan sudah melakukan setup VM.
-### Setup VM 
-Kami menggunakan VM dengan sistem operasi `Ubuntu 20.04 LTS Desktop` untuk melakukan proses instalisasi aplikasi. Karena aplikasi dioperasikan pada local computer, kami menginstal `localhost` dan `PHP` dengan tahapan berikut,
-
-__Step 1 — Install Apache__
-Memperbarui indeks _local package_:
-```
-$ sudo apt update
-```
-Install _package_ `apache2`:
-```
-$ sudo apt install apache2
-```
-Setelah mengkonfirmasi penginstalan, `apt` akan menginstal _Apache_ dan semua dependensi yang diperlukan.
-
-__Step 2 — Menyesuaikan Firewall__
-Selama instalasi, Apache mendaftarkan dirinya dengan UFW untuk menyediakan beberapa profil aplikasi yang dapat digunakan untuk mengaktifkan atau menonaktifkan akses ke Apache melalui firewall.
-
-List profil aplikasi UFW:
-```
-$ sudo ufw app list
-```
-Sebaiknya aktifkan profil yang paling ketat yang masih memungkinkan traffic yang telah dikonfigurasikan. Karena disini kami belum mengkonfigurasi SSL untuk server, kami hanya perlu mengizinkan traffic pada port 80:
-```
-$ sudo ufw allow 'Apache'
-```
-Verifikasi perubahan:
-```
-$ sudo ufw status
-```
-Pada output yang ditampilkan, profil tersebut telah diaktifkan untuk mengizinkan akses ke server web.
-
-Selanjutnya, kami melakukan konfigurasi SSH dan _port-forwarding_ dari server ke host windows. Pada server, kami install dan enable konfigurasi SSH nya:
-```
-$ sudo apt install openssh-server
-$ sudo systemctl enable ssh
-$ sudo systemctl start ssh
-$ sudo ufw allow ssh
-$ sudo ufw enable
-```
-
-Pada virtual-box, kita terapkan aturan port forwarding sebagai berikut:
-![port-forwarding](https://user-images.githubusercontent.com/60083980/111300227-6b104c00-8683-11eb-9649-68172c05b270.png)
-
-Server sudah dapat diakses melalui SSH dari windows dan menginstal aplikasi.
-*gambar*
-
 ### Install Discourse Dependencies
 
 Terdapat beberapa _packages_ yang dibutuhkan untuk mempersiapkan _Rails development environment_, yang nantinya akan digunakan untuk _develop_ aplikasi. _Packages_ yang dibutuhkan terdiri dari:
@@ -160,17 +114,53 @@ Run MailCatcher:
 mailcatcher --http-ip 0.0.0.0
 ```
 
+# Konfigurasi 
+### Setup VM 
+Kami menggunakan VM dengan sistem operasi `Ubuntu 20.04 LTS Desktop` untuk melakukan proses instalisasi aplikasi. Karena aplikasi dioperasikan pada local computer, kami menginstal `localhost` dan `PHP` dengan tahapan berikut,
 
-# Konfigurasi (opsional)
-Setting server tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-* batas upload file
-* batas memori
-* dll
+__Step 1 — Install Apache__
+Memperbarui indeks _local package_:
+```
+$ sudo apt update
+```
+Install _package_ `apache2`:
+```
+$ sudo apt install apache2
+```
+Setelah mengkonfirmasi penginstalan, `apt` akan menginstal _Apache_ dan semua dependensi yang diperlukan.
 
-Plugin untuk fungsi tambahan
-* login dengan Google/Facebook
-* editor Markdown
-* dll
+__Step 2 — Menyesuaikan Firewall__
+Selama instalasi, Apache mendaftarkan dirinya dengan UFW untuk menyediakan beberapa profil aplikasi yang dapat digunakan untuk mengaktifkan atau menonaktifkan akses ke Apache melalui firewall.
+
+List profil aplikasi UFW:
+```
+$ sudo ufw app list
+```
+Sebaiknya aktifkan profil yang paling ketat yang masih memungkinkan traffic yang telah dikonfigurasikan. Karena disini kami belum mengkonfigurasi SSL untuk server, kami hanya perlu mengizinkan traffic pada port 80:
+```
+$ sudo ufw allow 'Apache'
+```
+Verifikasi perubahan:
+```
+$ sudo ufw status
+```
+Pada output yang ditampilkan, profil tersebut telah diaktifkan untuk mengizinkan akses ke server web.
+
+Selanjutnya, kami melakukan konfigurasi SSH dan _port-forwarding_ dari server ke host windows. Pada server, kami install dan enable konfigurasi SSH nya:
+```
+$ sudo apt install openssh-server
+$ sudo systemctl enable ssh
+$ sudo systemctl start ssh
+$ sudo ufw allow ssh
+$ sudo ufw enable
+```
+
+Pada virtual-box, kita terapkan aturan port forwarding sebagai berikut:
+![port-forwarding](https://user-images.githubusercontent.com/60083980/111300227-6b104c00-8683-11eb-9649-68172c05b270.png)
+
+Server sudah dapat diakses melalui SSH dari windows dan menginstal aplikasi.
+*gambar*
+
 
 
 # Maintenance (opsional)
