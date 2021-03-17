@@ -1,7 +1,13 @@
+---
+ 
 ![Discourse_logo](https://user-images.githubusercontent.com/60083980/111193101-63519880-85ec-11eb-9133-f9f6cc20def9.png)
 
 ---
-[Sekilas Tentang](#sekilas-tentang) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi) |
+# 💻 __Discourse__ 
+original repository : https://github.com/discourse/discourse
+
+---
+[Sekilas Tentang](#-sekilas-tentang) | [Instalasi](#-instalasi) | [Konfigurasi](#-konfigurasi ) | [Cara Pemakaian](#-cara-pemakaian) | [Pembahasan](#-pembahasan) | [Referensi](#-referensi) |
 :---:|:---:|:---:|:---:|:---:|:---:
 ---
 
