@@ -230,6 +230,6 @@ Ini contoh perbandingan aplikasi web lain yang sejenis ya.
 [What is Discourse?](https://www.discourse.org/about) - Discourse <br>
 [Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint <br>
 [Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) - DigitalOcean
-(https://www.feverbee.com/platforms/discourse/) - Pro and Cons Discourse
+[Discourse Review](https://www.feverbee.com/platforms/discourse/) - Pro and Cons Discourse
 
 ---
