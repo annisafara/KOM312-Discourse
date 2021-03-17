@@ -206,18 +206,19 @@ Setelah seluruh tahapan pada bagian __Instalasi__ sudah berhasil dilakukan, apli
 
 ---
 # 📚 Pembahasan
-* Pendapat anda tentang aplikasi web ini
-  * kelebihan <p>
-  Kelebihan aplikasi platform discourse adalah aplikasi ini dapat melakukan setup secara penuh mulai dari cek traffic dan API, set tampilan (tema, font, logo dll), jadi seluruh   konfigurasi yang kita lakukan dapat memiliki kontrol penuh terhadap aplikasi platform yang dijalankan. </p>
-  * kekurangan
-  -
-* Bandingkan dengan aplikasi web lain yang sejenis
+__Discourse__ merupakan platform diskusi dimana pengguna dapat membuat, membaca, dan membalas suatu topik diskusi. Platform yang 100% open source dan hadir di seluruh dunia ini menawarkan berbagai kelebihan, diantaranya :
+* Platform yang mudah untuk digunakan
+* Pemberitahuan secara _real time_
+* Menyajikan _list_ diskusi berdasarkan kategori yang diinginkan
+* Memberi kemudahan serta cara yang efektif untuk menyoroti topik yang diinginkan, serta mengidentifikasi topik diskusi yang sedang aktif
+* Pengguna dapat menyembunyikan kategori tertentu yang tidak diminati
+* Dirancang untuk tabet resolusi tinggi dan _advanced_ web browsers
+* Dibangun dalam sistem dan tata kelola yang memungkinakan komunitas diskusi bebas dari spammer, troll, dan pelaku kejahatan bahkan tanpa moderator resmi
 
-Kelebihan | Kekurangan
---------- | ----------
-Content cell 1 | Content cell 2
-Content2 cell 1 | Content2 cell 2
-Content3 cell 1 | Content3 cell 2
+Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberapa kekurangan, diantaranya :
+* Format UI yang kompleks terkesan berantakan dan tidak teratur
+* Pengguna tidak dapat memblokir pengguna lainnya yang dianggap mengganggu
+* Pembaruan yang seing, yang memungkinkan perubahan UI berkelanjutan
 
 ---
 ### Discourse VS EpochTalk
@@ -229,5 +230,6 @@ Ini contoh perbandingan aplikasi web lain yang sejenis ya.
 [What is Discourse?](https://www.discourse.org/about) - Discourse <br>
 [Install Ubuntu VirtualBox](https://linuxhint.com/install_ubuntu_virtualbox_2004/) - linuxhint <br>
 [Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04) - DigitalOcean
+(https://www.feverbee.com/platforms/discourse/) - Pro and Cons Discourse
 
 ---
