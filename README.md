@@ -21,7 +21,7 @@ __Discourse__ dirancang untuk internet 10 tahun ke depan, sehingga persyaratan b
 * Mozilla Firefox
 * Apple Safari
 
-Discourse dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan secara otomatis beralih ke tata letak seluler untuk layar kecil.
+__Discourse__ dibangun dengan mempertimbangkan perangkat sentuh resolusi tinggi, dan secara otomatis beralih ke tata letak seluler untuk layar kecil.
 * Mobile Safari, iOS 10.3+
 * Chrome Seluler, Android 4.4+
 ---
