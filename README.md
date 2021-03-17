@@ -213,12 +213,12 @@ __Discourse__ merupakan platform diskusi dimana pengguna dapat membuat, membaca,
 * Memberi kemudahan serta cara yang efektif untuk menyoroti topik yang diinginkan, serta mengidentifikasi topik diskusi yang sedang aktif
 * Pengguna dapat menyembunyikan kategori tertentu yang tidak diminati
 * Dirancang untuk tabet resolusi tinggi dan _advanced_ web browsers
-* Dibangun dalam sistem dan tata kelola yang memungkinakan komunitas diskusi bebas dari spammer, troll, dan pelaku kejahatan bahkan tanpa moderator resmi
+* Dibangun dalam sistem dan tata kelola yang memungkinakan komunitas diskusi bebas dari spammer, troll, dan pelaku kejahatan
 
 Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberapa kekurangan, diantaranya :
 * Format UI yang kompleks terkesan berantakan dan tidak teratur
 * Pengguna tidak dapat memblokir pengguna lainnya yang dianggap mengganggu
-* Pembaruan yang seing, yang memungkinkan perubahan UI berkelanjutan
+* Pembaruan yang sering, yang memungkinkan perubahan UI berkelanjutan
 
 ---
 ### Discourse VS EpochTalk
