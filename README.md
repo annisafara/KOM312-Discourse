@@ -243,7 +243,8 @@ Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberap
 
 
 #### Discord
-![Tampilan Discord](https://user-images.githubusercontent.com/60083961/111429226-47a0dc00-872b-11eb-8f58-186f35e8cd3f.png)
+![Tampilan Discord](https://user-images.githubusercontent.com/60083961/111429898-33111380-872c-11eb-9952-712cfa0f5b51.png)
+
 
 ##### Fitur pada discord:
 * Public Conversation
