@@ -227,13 +227,15 @@ Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberap
 * Pembaruan yang sering, yang memungkinkan perubahan UI berkelanjutan
 
 ---
-### Discourse VS Slack VS Discord
+## Discourse VS Slack VS Discord
 
-#### Slack
+### Slack
+
+__Slack__ adalah aplikasi project management yang juga bisa digunakan sebagai alat komunikasi, di mana dengan satu alat ini, kita bisa menggunakannya untuk berkirim pesan hingga files atau dokumen.
 
 ![Tampilan Slack](https://user-images.githubusercontent.com/60083961/111430187-97cc6e00-872c-11eb-9235-ca24d5fb8455.png)
 
-##### Fitur pada slack:
+#### Fitur pada slack:
 * Public Conversation
 * Realtime Chat
 * Private message
@@ -244,11 +246,13 @@ Disamping kelebihan-kelebihan yang dimiliki, Platform ini masih memiliki beberap
 * Message history (10k message on free plan, unlimited on paid plan)
 
 
-#### Discord
+### Discord
+
+__Discord__ adalah aplikasi voice chat gratis yang bisa dipakai untuk berkomunikasi. Biasanya aplikasi ini digunakan oleh para pemain game online.
 
 ![Tampilan Discord](https://user-images.githubusercontent.com/60083961/111430857-92bbee80-872d-11eb-9526-b93e762d2a1e.png)
 
-##### Fitur pada discord:
+#### Fitur pada discord:
 * Public Conversation
 * Realtime Chat
 * Private message
