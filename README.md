@@ -171,7 +171,6 @@ Pada virtual-box, kita terapkan aturan port forwarding sebagai berikut:
 ![port-forwarding](https://user-images.githubusercontent.com/60083980/111300227-6b104c00-8683-11eb-9649-68172c05b270.png)
 
 Server sudah dapat diakses melalui SSH dari windows dan menginstal aplikasi.
-*gambar*
 
 ---
 ---
