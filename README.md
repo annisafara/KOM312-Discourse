@@ -112,7 +112,6 @@ Pada localhost secara default aplikasi akan dijalankan pada port 3000, sehingga 
 __Catatan:__ Setiap ingin menjalankan aplikasi, pastikan sudah masuk ke directory aplikasi lalu kembali _run_ servicenya. Setelah itu baru akses kembali http://localhost:3000. 
 ```
 cd alamatdirektori/direktori
-source ~/.bashrc
 bundle exec rails server
 ```
 
